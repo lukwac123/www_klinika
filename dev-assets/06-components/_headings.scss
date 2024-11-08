@@ -1,0 +1,64 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins' as *;
+
+.c-heading {
+    color: $blue-text;
+    line-height: $line-height-sm;
+    margin-bottom: calc($grid-base / 2);
+
+    &--level1 {
+        font-size: $font-size-2;
+
+        @include large-up {
+            font-size: $font-size-1;
+        }
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--level2 {
+        font-size: $font-size-3;
+
+        @include large-up {
+            font-size: $font-size-2;
+        }
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--level3 {
+        font-size: $font-size-3;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--level4 {
+        font-size: $font-size-4;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--level5 {
+        font-size: $font-size-5;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+
+    &--white {
+        color: $white;
+    }
+}

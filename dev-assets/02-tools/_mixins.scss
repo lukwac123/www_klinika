@@ -1,0 +1,17 @@
+@use '../01-settings/variables' as *;
+
+// Od średnich w górę
+@mixin medium-up {
+    @media (min-width: $bp-medium) {
+        @content
+    }
+};
+
+// Od dużych w górę
+@mixin large-up {
+    @media (min-width: $bp-large) {
+        @content
+    }
+};
+
+

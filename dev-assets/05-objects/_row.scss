@@ -1,0 +1,18 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins'as *;
+
+.o-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    @include medium-up {
+        flex-direction: row;
+    }
+
+    &--center-y {
+        align-items: center;
+    }
+}

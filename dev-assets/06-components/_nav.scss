@@ -1,0 +1,26 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins' as *;
+
+.c-nav {
+    
+    &__item {
+        color: $white;
+        display: block;
+        font-size: $font-size-5;
+        padding-bottom: calc($grid-base * .75);
+        padding-top: calc($grid-base * .75);
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:hover {
+            color: $white;
+        }
+
+        @include large-up {
+            display: inline-block;
+            margin-left: calc($grid-base * 2.5);
+            width: auto;
+        }
+    }
+}

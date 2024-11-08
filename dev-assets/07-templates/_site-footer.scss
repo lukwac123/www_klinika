@@ -1,0 +1,76 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins'as *;
+
+.t-site-footer {
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    & .o-row {
+        padding-bottom: calc($grid-base * 4);
+        padding-top: calc($grid-base * 5);
+    }
+
+    &__item {
+        flex-basis: auto;
+        padding-left: $gutter;
+
+        &:first-child {
+            @include medium-up {
+                width: 28%;
+            }
+        }
+
+        &:nth-child(2) {
+            @include medium-up {
+                width: 28%;
+            }
+        }
+
+        &:nth-child(3) {
+            @include medium-up {
+                width: 25%;
+            }
+        }
+
+        &:nth-child(4) {
+            @include medium-up {
+                width: 15%;
+            }
+        }
+    }
+
+    &__heading {
+        align-items: center;
+        display: flex;
+        height: calc($grid-base * 6);
+    }
+
+    &__text-heading {
+        color: $gray-dark;
+    }
+
+    &__address {
+        padding-top: calc($grid-base * 2);
+    }
+
+    &__label {
+        display: block;
+        font-size: $font-size-5;
+        margin-bottom: $grid-base;
+    }
+
+    &__contact-item {
+        line-height: $line-height-lg;
+        margin-bottom: calc($grid-base * 2);
+    }
+
+    &__copy {
+        padding-bottom: calc($grid-base * 2.5);
+        padding-top: calc($grid-base * 2.5);
+    }
+
+    &__copy-text {
+        font-size: $font-size-7;
+    }
+
+}

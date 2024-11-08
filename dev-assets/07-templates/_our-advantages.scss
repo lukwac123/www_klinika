@@ -1,0 +1,14 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins'as *;
+
+.t-our-advantages {
+    padding-top: calc($grid-base * 6);
+
+    &__item {
+        margin-bottom: calc($grid-base * 4);
+
+        @include large-up {
+            margin-bottom: calc($grid-base * 10);
+        }
+    }
+}

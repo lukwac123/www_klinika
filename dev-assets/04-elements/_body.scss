@@ -1,0 +1,13 @@
+@use '../01-settings/variables' as *;
+
+body {
+    background-color: $white;
+    color: $gray-dark;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $font-size-4;
+    margin: 0;
+    padding: 0;
+    
+
+}
+

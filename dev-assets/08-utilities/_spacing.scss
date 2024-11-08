@@ -1,0 +1,13 @@
+@use '../01-settings/variables' as *;
+
+.u-mb-1 {
+    margin-bottom: $grid-base;
+}
+
+.u-mb-2 {
+    margin-bottom: calc($grid-base * 2);
+}
+
+.u-mb-3 {
+    margin-bottom: calc($grid-base * 3);
+}

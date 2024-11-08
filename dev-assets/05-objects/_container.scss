@@ -1,0 +1,19 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins'as *;
+
+.o-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    width: 100%;
+
+    @include medium-up {
+        max-width: 740px;
+    }
+
+    @include large-up {
+        max-width: 1140px;
+    }
+}
+

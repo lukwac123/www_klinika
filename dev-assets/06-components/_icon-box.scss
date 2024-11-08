@@ -1,0 +1,22 @@
+@use '../01-settings/variables' as *;
+
+.c-icon-box {
+    text-align: center;
+    
+    &__image {
+        display: flex;
+        justify-content: center;
+        /** Najwyższa ikona ma taką właśnie wysokość **/
+        height: calc($grid-base * 6);
+        margin-bottom: calc($grid-base * 2.5);
+    }
+
+    &__icon {
+        align-self: center;
+    }
+
+    &__text {
+        font-size: $font-size-6;
+        margin-top: calc($grid-base * 1.5);
+    }
+}

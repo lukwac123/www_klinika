@@ -1,0 +1,49 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins'as *;
+
+.t-clinic-locator {
+    background: $blue-gradient;
+    padding-bottom: calc($grid-base * 4.5);
+    padding-top: calc($grid-base * 4);
+
+    @include large-up {
+        background: url(/images/map.png) 10% 80% no-repeat, $blue-gradient;
+        padding-top: calc($grid-base * 20);
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__content {
+        width: 100%;
+
+        @include large-up {
+            max-width: 500px;
+            text-align: right;
+        }
+    }
+
+    &__heading {
+        margin-bottom: calc($grid-base * 1.5);
+    }
+
+    &__subheading {
+        color: $white;
+        margin-bottom: calc($grid-base * 4);
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-bottom: calc($grid-base * 2.5);
+    }
+
+    &__btn {
+        margin-bottom: calc($grid-base * 1.5);
+        margin-left: calc($grid-base * 1.5);
+        margin-right: 0;
+    }
+}

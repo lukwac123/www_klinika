@@ -1,0 +1,9 @@
+@use '../01-settings/variables' as *;
+
+.c-label {
+    display: block;
+    font-size: $font-size-6;
+    font-weight: bold;
+    margin-bottom: calc($grid-base * 1.5);
+    text-transform: uppercase;
+}

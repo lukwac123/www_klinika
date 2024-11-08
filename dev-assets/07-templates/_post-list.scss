@@ -1,0 +1,53 @@
+@use '../01-settings/variables' as *;
+@use '../02-tools/mixins'as *;
+
+.t-post-list {
+    background-color: $gray-light;
+    padding-top: calc($grid-base * 4);
+    position: relative;
+
+    @include large-up {
+        height: 380px;
+    }
+
+    &__content {
+        padding-bottom: calc($grid-base * 4);
+
+        @include large-up {
+            background-color: $gray-light;
+            clip-path: ellipse(68% 445px at 50% 0);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: calc($grid-base * 8);
+            z-index: 1000;
+        }
+    }
+    
+    &__item {
+        margin-bottom: calc($grid-base * 4);
+
+        @include large-up {
+            margin-bottom: calc($grid-base * 2);
+        }
+    }
+
+    &__image {
+        margin-bottom: calc($grid-base * 2.5);
+        max-width: 349px;
+        position: relative;
+    }
+
+    &__badge {
+        background: $blue-gradient;
+        border-radius: $border-radius 0 0 $border-radius;
+        color: $white;
+        font-size: $font-size-5;
+        font-weight: bold;
+        padding: .5rem 1rem;
+        position: absolute;
+        top: 70%;
+        text-transform: uppercase;
+        right: 0;
+    }
+}
